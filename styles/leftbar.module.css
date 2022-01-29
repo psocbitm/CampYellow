@@ -1,0 +1,40 @@
+@media screen and (max-width: 576px) {
+  .leftbar {
+    display: none;
+  }
+}
+
+.leftbar {
+  flex: 3.5;
+  margin: 0 20px;
+}
+
+.leftbarTop {
+  margin-bottom: 20px
+
+}
+
+.userImage {
+  height: 100px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.listGroupItem {
+  padding: 7.5px 0;
+  border: 0;
+}
+
+.leftbarElement {
+  padding: 25px;
+  border-radius: 15px;
+  background-color: #f8f9fa;
+
+}
+
+.eventImage{
+  cursor: pointer;
+  height: 60px;
+  max-height: 60px;
+  margin: 0 10px 10px 0;
+}

@@ -1,0 +1,33 @@
+.statusbar {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.userImage{
+    max-height: 70px;
+    margin-right: 20px;
+}
+
+.inputBox{
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px 15px;
+}
+
+.statusbarLink{
+    cursor: pointer;
+}
+
+.modelInput{
+    padding: 5px;
+    border: 0;
+    margin: 10px 0;
+    min-height: 150px;
+    width: 100%;
+}
+
+.modelInput:focus{
+   outline: 0;
+}

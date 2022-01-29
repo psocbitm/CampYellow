@@ -1,0 +1,73 @@
+.post {
+  border-radius: 20px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.userImg {
+  max-height: 75px;
+  margin-right: 20px;
+}
+
+.seeMoreBtn {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: inline;
+}
+
+.postImg {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.postBtn {
+  cursor: pointer;
+  color: #000000;
+  font-size: 20px;
+}
+.BtnClicked {
+  color: #0d6efd;
+}
+
+.commentImage {
+  max-height: 45px;
+  margin-right: 10px;
+}
+
+.commentBoxInputContainer {
+  border: 1px solid black;
+  width: 100%;
+  padding: 5px 12.5px;
+  border-radius: 20px;
+}
+
+.commentBoxInput {
+  width: 100%;
+  border: 0;
+  padding: 10px 12.5px;
+  background-color: rgba(0,0,0,0);
+  border-radius: 20px;
+}
+.commentBoxInput[type="text"] {
+  outline: 0;
+}
+
+.commentBoxInputContainer > span {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.commentContainer {
+  background-color: rgb(240, 240, 240);
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px 20px;
+}

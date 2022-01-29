@@ -1,0 +1,28 @@
+.rightbar {
+  flex: 3.5;
+  margin: 0 20px;
+}
+
+.rightbarElement {
+  padding: 25px;
+  border-radius: 15px;
+  background-color: #f8f9fa;
+}
+
+.rightbarTop{
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .rightbar {
+    display: none;
+  }
+}
+
+
+.eventImage{
+  height: 60px;
+  max-height: 60px;
+  margin: 0 10px 10px 0;
+  cursor: pointer;
+}

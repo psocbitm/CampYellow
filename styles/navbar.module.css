@@ -1,0 +1,79 @@
+.navbar {
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(5px);
+  padding: 0;
+}
+
+.inputContainer {
+  background-color: rgb(233, 231, 225);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.input[type="text"] {
+  background-color: #00000000;
+  border: 0;
+  width: 200px;
+  transition: width 0.5s;
+}
+.input[type="text"]:focus {
+  outline: 0;
+  width: 275px;
+}
+
+.navbarList {
+  width: 100%;
+}
+
+.searchIcon {
+  margin-right: 5px;
+}
+
+.icon {
+  font-size: 17.5px;
+}
+
+.iconText,
+.icon {
+  color: rgb(60, 60, 60);
+}
+
+.item:hover > * {
+  color: black;
+}
+
+.userImg {
+  max-height: 25px;
+}
+
+@media screen and (min-width: 992px) {
+  .item {
+    display: flex;
+  }
+  .navbarList {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar {
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .item > span {
+    margin-right: 10px;
+  }
+  .inputContainer {
+    margin-top: 5px;
+  }
+  .navbarList {
+    align-items: start;
+    justify-content: center;
+  }
+  .navbarItemsList {
+    flex-direction: column;
+  }
+}
