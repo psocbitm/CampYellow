@@ -23,7 +23,7 @@ function Post(props) {
     });
     setComment(null)
     props.addPosts(Posts)
-    $(`.comments${props.post.id}`).toggleClass(`${styles.hidden}`)
+    $(`.comments${props.post.id}`).addClass(`${styles.hidden}`)
   }
 
   return <div className={`${styles.post} shadow`}>
