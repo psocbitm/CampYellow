@@ -1,10 +1,29 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from '../styles/post.module.css'
 function Post(props) {
   const [liked, setLiked] = useState(false);
-  const [addComment, setAddComment] = useState(null);
+  const [comment, setComment] = useState(null);
+
   function onComment() {
-    console.log(props.post.comments);
+    const Posts = props.posts;
+    const newComments = props.post.comments.concat({
+      userId: Math.floor(Math.random() * 100000000),
+      username: "palash",
+      userDesc: "qwerty qwerty",
+
+      userImg:
+        "https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png",
+      comment: comment,
+      createdAt: "Just Now",
+    })
+    Posts.forEach(element => {
+      if (element.id === props.post.id) {
+        element.comments = newComments
+      }
+    });
+    setComment(null)
+    props.addPosts(Posts)
+    $(`.comments${props.post.id}`).toggleClass(`${styles.hidden}`)
   }
 
   return <div className={`${styles.post} shadow`}>
@@ -83,15 +102,15 @@ function Post(props) {
         <div style={{ width: "100%" }}>
           <div className={`${styles.commentBoxInputContainer} d-flex justify-content-start align-items-center my-2`}>
             <input onChange={(e) => {
-              setAddComment(e.target.value)
+              setComment(e.target.value)
             }} onInput={() => {
               $('.postBtn').removeClass(`${styles.hidden}`)
             }} className={`${styles.commentBoxInput} commentInput${props.post.id}`} type="text" placeholder='Comment' />
             <span>
-              <i className="far fa-smile mx-2"></i>
+              <i aria-hidden className="far fa-smile mx-2"></i>
             </span>
             <span>
-              <i className="far fa-image"></i>
+              <i aria-hidden className="far fa-image"></i>
             </span>
           </div>
 
